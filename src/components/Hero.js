@@ -1,4 +1,5 @@
 import { Tick } from "../icons";
+import { SignupForm } from "./SignupForm";
 
 const outcomes = [
   "How to build this landing page with Next.js",
@@ -30,9 +31,9 @@ const ComingSoonBadge = () => (
 export const Hero = () => {
   return (
     <div className="border border-gray-200 md:flex md:flex-row">
-      <div className="text-center bg-gray-100 md:w-1/3 flex">
+      <div className="flex text-center bg-gray-100 md:w-1/3">
         <img
-          className="mx-auto"
+          className="object-contain mx-auto"
           src="/assets/img_nextjs-101-cover.png"
           alt="cover image"
         />
@@ -41,6 +42,7 @@ export const Hero = () => {
         <h2 className="mb-3 text-2xl font-bold">What you'll learn</h2>
         <OutcomesList />
         <ComingSoonBadge />
+        <SignupForm title="Leave your email below, to be notified when this course is ready" />
       </div>
     </div>
   );
